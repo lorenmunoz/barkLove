@@ -1,0 +1,242 @@
+body {
+   margin: 0 auto;
+}
+
+h2 {
+	margin: 0;
+	padding: 10px;
+	font-family: 'Handlee', cursive;
+}
+
+p {
+	font-family: 'Handlee', cursive; 
+}
+
+.logo {
+	position: absolute;
+  width: 300px;
+  height: 80px;
+}
+
+header {
+	height: 80px;
+}
+
+nav {
+	margin-left: 24%;
+}
+
+nav li {
+	text-decoration: none;
+	list-style: none;
+	display: inline-block;
+	margin-left: 6%;
+	padding-top: 30px;
+	font-family: 'Handlee', cursive;
+}
+
+.main {
+	background-image: url(../img/background1.png);
+	background-size: cover;
+	background-attachment: fixed;
+	height: 620px;
+}
+
+.mainWrapper {
+	background-color: rgba(230,230,250,.6);
+	border-radius: 5%;
+	box-shadow: 3px 3px 2px #545454;
+	width: 80%;
+	height: 550px;
+	position: relative;
+	left: 10%;
+	top: 20px;
+}
+
+.mainText {
+	width: 40%;
+	position: absolute;
+	left: 40%;
+	top: 12%;
+}
+
+.mainText h3 {
+	float: left;
+	font-family: 'Handlee', cursive;
+}
+
+.join {
+	position: absolute;
+	width: 24%;
+	left: 45%;
+	bottom: 30%;
+}
+
+.join img {
+	border-radius: 60%;
+	width: 50px;
+	height: 50px;
+	float: left;
+}
+
+.join p {
+	text-align: center;
+}
+
+
+.signInForm {
+  background-color: rgba(230,230,250,.6);
+  border-radius: 5%;
+  box-shadow: 3px 3px 2px #545454;
+  width: 25%;
+  height: 300px;
+  position: relative;
+  left: 5%;
+  top: 10%;
+}
+
+.signInForm h2 {
+  text-align: center;
+  color: #4876ff;
+  padding-top: 15px;
+}
+
+.signInForm label {
+	padding-left: 5%;
+	font-family: 'Handlee', cursive;
+}
+
+.signInForm button {
+  position: absolute;
+  bottom: 58%;
+  right: 5%;
+}
+
+.fb {
+  width: 35px;
+  height: 35px;
+  position: absolute;
+  bottom: 20%;
+  left: 25%;
+}
+
+.instagram {
+  width: 35px;
+  height: 35px;
+  position: absolute;
+  bottom: 20%;
+  left: 41%;
+}
+
+.twitter {
+  width: 35px;
+  height: 35px;
+  position: absolute;
+  bottom: 20%;
+  left: 58%;
+}
+
+#name {
+  width: 160px;
+}
+
+#password {
+	width: 169px;
+}
+
+.mainDog {
+	position: absolute;
+	bottom: 5%;
+	right: 10px;
+}
+
+.heart {
+	position: absolute;
+	bottom: 40%;
+	right: 6%;
+}
+
+/*BACHELORES PROFILE*/
+
+.eligibleBachelors {
+	background-image: url(../img/background3.png);
+	background-size: cover;
+	background-attachment: fixed;
+	height: 840px;
+}
+
+.Profile {
+	background-color: rgba(230,230,250,.8);
+	box-shadow: 3px 3px 2px #545454;
+	border-radius: 5%;
+	width: 400px;
+	height: 300px;
+	border: 1px solid #fff;
+	position: relative;
+  left: 16%;
+  float: left;
+  margin: 2%;
+}
+
+.Profile img {
+	width: 200px;
+	height: 210px;
+	float: left;
+	margin: 5%;
+	border-radius: 5%;
+}
+
+.eligibleBachelorette h2, .eligibleBachelors h2 {
+	width: 100%;
+	height: 4%;
+	background-color: rgba(224,102,255,.6);
+	color: #fff;
+	text-align: center;
+}
+/*BACHELORETTE PROFILE*/
+
+
+.eligibleBachelorette {
+	background-image: url(../img/background2.png);
+	background-size: cover;
+	background-attachment: fixed;
+	height: 900px;
+}
+
+/*LOVE STORY*/
+
+
+
+.loveStory {
+  background-image: url(../img/background4.png);
+	background-size: cover;
+	background-attachment: fixed;
+	height: 800px;	
+}
+
+.lsWrapper {
+	background-color: rgba(230,230,250,.6);
+	border-radius: 5%;
+	box-shadow: 3px 3px 2px #545454;
+	width: 80%;
+	height: 750px;
+	position: relative;
+	left: 10%;
+	top: 20px;
+}
+
+.wedding1 {
+  width: 66%;
+  height: 400px;
+  border-radius: 5%;
+  position: relative;
+  left: 17%;
+  top: 30px;
+}
+
+.events {
+	background-image: url(../img/background5.png);
+	background-size: cover;
+	background-attachment: fixed;
+	height: 700px;
+}
