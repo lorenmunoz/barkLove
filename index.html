@@ -6,21 +6,39 @@
   	<link rel="icon" type="image/png" href="icon/Dog.png">
   	<link href='https://fonts.googleapis.com/css?family=Handlee' rel='stylesheet' type='text/css'>
   	<link rel="stylesheet" type="text/css" href="css/style.css">
-  	
   </head>
-  <body>
-  	<header>
+  	<header id="home">
   		<img class="logo" src="img/barklove.png">	  
   	  <nav>
   	  	<ul>
-  	  		<li>Bachelors</li>
-  	  		<li>Bachelorettes</li>
-  	  		<li>Love Stories</li>
-  	  		<li>Upcoming Events</li>
+  	  		<a href="#bachelor"><li><strong>Bachelors</strong></li></a>
+  	  		<a href="#bachelorette"><li><strong>Bachelorettes</strong></li></a>
+  	  		<a href="#loveStory"><li><strong>Love Stories</strong></li></a>
+  	  		<a href="#upComing"><li><strong>Upcoming Events</strong></li></a>
   	  	</ul>
   	  </nav>
+  	  <img id="navButton" src="img/navButton.png">
     </header>
     <section class="main">
+    	<div class="lightbox" data-state="hidden">
+    		<img class="x" src="img/x.png">
+    		<div class="lightbox-container">
+    			<img src="img/register.png">
+    			<div class="register">
+	    			<p><label for="name" class="title">User Name:</label>
+	    			<input type="text" id="name" name="name"></p>
+	    			<p><label for="password" class="title">Password:</label>
+	          <input type="password" id="password" name="passaword"></p>
+	          <p><label for="password" class="title">Confirm Password:</label>
+	          <input type="password" id="password" name="passaword"></p>
+	          <p><label for="name" class="title">Pet's Name:</label>
+	    			<input type="text" id="name" name="name"></p>
+	    			<p><label for="comments" class="interest">Pet's Interests:</label></p>
+	    			<textarea name="comments" col="50" row="8">Enter Text Here...</textarea>
+	    	    <button>Register</button>
+    	    </div><!-- ends register -->
+    	  </div><!-- end lightbox-container -->
+    	</div><!-- end lightbox	 -->
     	<div class="mainWrapper">
     		<div class="signInForm">
     			<h2>Sign In</h2>
@@ -29,13 +47,13 @@
     			<label for="password" class="title">Password:</label>
           <input type="password" id="password" name="passaword">
     	    <button>log in</button>
-    	    <img class="fb" src="img/fb.png">
-    	    <img class="instagram" src="img/instagram.gif">
-    	     <img class="twitter" src="img/twitter.png">
+    	    <a href="https://www.facebook.com/" target="-blank"><img class="fb" src="img/fb.png"></a>
+    	    <a href="https://www.instagram.com/accounts/login/" target="_blank"><img class="instagram" src="img/instagram.gif"></a>
+    	    <a href="https://twitter.com/login?lang=en" target="_blank"><img class="twitter" src="img/twitter.png"></a>
         </div> <!--  ends signInForm -->
         <div class="mainText">
-	        <h3>Why not let your pet enjoy the company of another pet?
-	        	Barklove.com serves as an online community for pet owners who want their furry best friends to enjoy a long, healthy, and fulfilling life in the company of another pet. </h3>
+	        <h3>Why not let your pet enjoy the company of another pet?</h3>
+	        	<h4>Barklove.com serves as an online community for pet owners who want their furry best friends to enjoy a happy and fulfilling life in the company of their Romeo or Juliet. </h4>
         </div> <!-- ends mainText -->
         <div class="join">
 	      	<p>Join our 1,320 members</p> 
@@ -49,73 +67,145 @@
       <img class="mainDog" src="img/animals-dog.png">
       <img class="heart" src="img/heart.png">
     </section>
-    <section class="eligibleBachelors">
-    	<h2>Eligible Bachelors</h2>
-    	<div class="bachelorette">
+    <section class="eligibleBachelors" id="bachelor">
+    	<a href=""><img class="right" src="img/right.png"></a>
+    	<a href=""><img class="left" src="img/left.png"></a>
+    	<h2>Eligible Bachelors<a href="#home"><img class="dogHouse" src="img/doghouse.png"></a></h2>
+    	<div class="bachelors">
     		<div class="Profile">
-    			<img src="img/pic6.png">
+    			<img src="img/pic6.png"
+    			  onmouseover="this.src='img/pic62.png'"
+    			  onmouseout="this.src='img/pic6.png'">
     			<p>Name: Dexter</p>
     			<p>Age: 5 years</p>
-    			<p>what he likes</p>
-    		</div>	
-    		<div class="Profile">
-    			<img src="img/pic5.png">
+    			<p>Enjoy getting stinky and playing in the mud. I like pizza and the cat's food :D.</p>
+    		</div><!-- ends profile -->	
+    		<div class="Profile next">
+    			<img src="img/pic5.png"
+    			  onmouseover="this.src='img/pic52.png'"
+    			  onmouseout="this.src='img/pic5.png'">
     			<p>Name: Max</p>
     			<p>Age: 4 years</p>
-    			<p>what he likes</p>
-    		</div>
-    		<div class="Profile">
-    			<img src="img/pic7.png">
+    			<p>charming and handsome. love LOVE Purina Frosty paws, and "pupsicles", and shoes!!! love chewing shoes!</p>
+    		</div><!-- ends profile -->
+    		<div class="Profile next">
+    			<img src="img/pic7.png"
+    			  onmouseover="this.src='img/pic72.png'"
+    			  onmouseout="this.src='img/pic7.png'">
     			<p>Name: Rocky</p>
     			<p>Age: 4 years</p>
-    			<p>what he likes</p>
-    		</div>
-    		<div class="Profile">
-    			<img src="img/pic4.png">
+    			<p>Snuggly and fussy. truly love the water and im happy to use a good swim as a fun exercise! </p>
+    		</div><!-- ends profile -->
+    		<div class="Profile next">
+    			<img src="img/pic4.png"
+    			  onmouseover="this.src='img/pic42.png'"
+    			  onmouseout="this.src='img/pic4.png'">
     			<p>Name: Killer</p>
     			<p>Age: 2 years</p>
-    			<p>what he likes</p>
-    		</div>
-    	</div> 	
+    			<p>Romantic and smart. I enjoy Mozart and Debussy. Love long walks and candle light dinners.</p>
+    		</div><!-- ends profile -->
+    	</div><!-- ends bachelor  -->	
     </section>
-    <section class="eligibleBachelorette">
-    	<h2>Eligible Bachelorettes</h2>
-    	<div class="bachelor">
+    <section class="eligibleBachelorette" id="bachelorette">
+    	<a href=""><img class="right" src="img/right.png"></a>
+    	<a href=""><img class="left" src="img/left.png"></a>
+    	<h2>Eligible Bachelorettes <a href="#home"><img class="dogHouse" src="img/doghouse.png"></a></h2>
+    	<div class="bachelorette">
     		<div class="Profile">
-    			<img src="img/pic1.png">
+    			<img src="img/pic1.png"
+    			  onmouseover="this.src='img/pic12.png'"
+    			  onmouseout="this.src='img/pic1.png'">
     			<p>Name: Peper</p>
     			<p>Age: 3 years</p>
-    			<p>what he likes</p>
-    		</div>	
-    		<div class="Profile">
-    			<img src="img/pic2.png">
+    			<p>I'm a very sweet and good girl.
+            I love watching TV (specially "Game Of Thrones") and pizza. I'm a little daredevil :) i
+            enjoy extreme sports like fetch and tug of war. </p>
+    		</div><!-- ends profile -->
+    		<div class="Profile next">
+    			<img src="img/pic2.png"
+    			  onmouseover="this.src='img/pic22.png'"
+    			  onmouseout="this.src='img/pic2.png'">
     			<p>Name: Coco</p>
     			<p>Age: 4 years</p>
-    			<p>what he likes</p>
-    		</div>
-    		<div class="Profile">
-    			<img src="img/pic3.png">
+    			<p>Mommy of 13 :) I'm very caring and loving. There is nothing i enjoy more than  NAPS!!!! I also like romantic comedies and bacon snacks. yummy!!!  </p>
+    		</div><!-- ends profile -->
+    		<div class="Profile next">
+    			<img src="img/pic3.png"
+    			  onmouseover="this.src='img/pic32.png'"
+    			  onmouseout="this.src='img/pic3.png'">
     			<p>Name: Cookie</p>
     			<p>Age: 6 years</p>
-    			<p>what he likes</p>
-    		</div>
-    		<div class="Profile">
-    			<img src="img/pic8.png">
+    			<p>I love italian food and sushi. I enjoy walks in the park and snuggles!!
+            I hate the Mailman!
+          </p>
+    		</div><!-- ends profile -->
+    		<div class="Profile next">
+    			<img src="img/pic8.png" 
+    			  onmouseover="this.src='img/pic82.png'"
+    			  onmouseout="this.src='img/pic8.png'">
     			<p>Name: Nucita</p>
     			<p>Age: 10 months</p>
-    			<p>what he likes</p>
-    		</div>
-    	</div>	
+    			<p>Fancy and sophisticated. Potty trained ans well behaved. Enjoy shopping the lastest fashion trends.A true princess!!</p>
+    		</div><!-- ends profile -->
+    	</div><!-- ends bachelorette	 -->
     </section>
-    <section class="loveStory">
+    <section class="loveStory" id="loveStory">
+    	<h2>Succesful love stories <a href="#home"><img class="dogHouse" src="img/doghouse.png"></a></h2>
     	<div class="lsWrapper">
-	    	<h2>Succesful love stories</h2>
+    		<p>~ Peter & Mango ~</p>
+    		<p>Members since 2011.  Married 2012.</p>
 	    	<img class="wedding1" src="img/wed1.png">
-      </div>
+	    	<div class="wedding2">
+	      	<p>More happily married couples!</p> 
+	      	<img src="img/wed2.png">
+	      	<img src="img/wed3.png">
+	      	<img src="img/wed4.png">
+	      	<img src="img/wed5.png">
+	      	<img src="img/wed6.png">
+	      </div> <!-- ends wedding2  -->
+      </div> <!-- ends lsWrapper -->
     </section>
-    <section class="events">
-    	<h2>upcoming events</h2>
-    	
-    </section>	
+    <section class="events" id="upComing">
+    	<h2>Upcoming events<a href="#home"><img class="dogHouse" src="img/doghouse.png"></a></h2>
+    	<div class="eWrapper">
+    		<a href=""><img class="right" src="img/right.png"></a>
+    	  <a href=""><img class="left" src="img/left.png"></a>
+    		<img class="eimg" src="img/events.png">
+    	</div><!-- ends eWrapper	 -->
+    </section>
+    <script src="http://code.jquery.com/jquery-1.12.0.js"></script>
+    <script src="js/jquery.nav.js"></script>  
+    <script> 
+
+    // ONE PAGE NAVIGATION
+	    $('#home').onePageNav();
+
+	  // REGISTRATION LIGHTBOX
+	
+
+    // NAVIGATION BAR 
+
+    function toggleNav() {
+         $('nav ul').slideToggle();
+      }
+
+      $('#navButton').click(toggleNav);
+
+      function windowResize() {
+        var width = $(window).width();
+        var menu = $('nav ul')
+      
+        if(width > 500 && menu.is(':hidden')) {
+          menu.removeAttr('style');
+        }
+
+      }
+      
+      $(window).resize(windowResize);
+
+
+	   
+
+    </script>
   </body>	
 </html>
