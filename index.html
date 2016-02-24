@@ -11,10 +11,10 @@
   		<img class="logo" src="img/barklove.png">	  
   	  <nav>
   	  	<ul>
-  	  		<a href="#bachelor"><li><strong>Bachelors</strong></li></a>
-  	  		<a href="#bachelorette"><li><strong>Bachelorettes</strong></li></a>
-  	  		<a href="#loveStory"><li><strong>Love Stories</strong></li></a>
-  	  		<a href="#upComing"><li><strong>Upcoming Events</strong></li></a>
+  	  		<li><a href="#bachelor"><strong>Bachelors</strong></a></li>
+  	  		<li><a href="#bachelorette"><strong>Bachelorettes</strong></a></li>
+  	  		<li><a href="#loveStory"><strong>Love Stories</strong></a></li>
+  	  		<li><a href="#upComing"><strong>Upcoming Events</strong></a></li>
   	  	</ul>
   	  </nav>
   	  <img id="navButton" src="img/navButton.png">
@@ -46,7 +46,7 @@
     			<input type="text" id="name" name="name">
     			<label for="password" class="title">Password:</label>
           <input type="password" id="password" name="passaword">
-    	    <button>log in</button>
+    	    <button id="logIn">log in</button>
     	    <a href="https://www.facebook.com/" target="-blank"><img class="fb" src="img/fb.png"></a>
     	    <a href="https://www.instagram.com/accounts/login/" target="_blank"><img class="instagram" src="img/instagram.gif"></a>
     	    <a href="https://twitter.com/login?lang=en" target="_blank"><img class="twitter" src="img/twitter.png"></a>
@@ -67,7 +67,7 @@
       <img class="mainDog" src="img/animals-dog.png">
       <img class="heart" src="img/heart.png">
     </section>
-    <section class="eligibleBachelors" id="bachelor">
+    <section class="eligibleBachelors data-stellar-background-ratio='0.5'" id="bachelor">
     	<a href=""><img class="right" src="img/right.png"></a>
     	<a href=""><img class="left" src="img/left.png"></a>
     	<h2>Eligible Bachelors<a href="#home"><img class="dogHouse" src="img/doghouse.png"></a></h2>
@@ -78,7 +78,7 @@
     			  onmouseout="this.src='img/pic6.png'">
     			<p>Name: Dexter</p>
     			<p>Age: 5 years</p>
-    			<p>Enjoy getting stinky and playing in the mud. I like pizza and the cat's food :D.</p>
+    			<p>Enjoy getting stinky and playing in the mud. I like pizza and Mr. Whiskerson's food :D.</p>
     		</div><!-- ends profile -->	
     		<div class="Profile next">
     			<img src="img/pic5.png"
@@ -86,7 +86,7 @@
     			  onmouseout="this.src='img/pic5.png'">
     			<p>Name: Max</p>
     			<p>Age: 4 years</p>
-    			<p>charming and handsome. love LOVE Purina Frosty paws, and "pupsicles", and shoes!!! love chewing shoes!</p>
+    			<p>charming and handsome. I love LOVE Purina Frosty paws, and "pupsicles", and shoes!!! love chewing shoes!</p>
     		</div><!-- ends profile -->
     		<div class="Profile next">
     			<img src="img/pic7.png"
@@ -94,7 +94,7 @@
     			  onmouseout="this.src='img/pic7.png'">
     			<p>Name: Rocky</p>
     			<p>Age: 4 years</p>
-    			<p>Snuggly and fussy. truly love the water and im happy to use a good swim as a fun exercise! </p>
+    			<p>Snuggly and fussy. I truly love the water and im happy to use a good swim as a fun exercise! </p>
     		</div><!-- ends profile -->
     		<div class="Profile next">
     			<img src="img/pic4.png"
@@ -102,11 +102,11 @@
     			  onmouseout="this.src='img/pic4.png'">
     			<p>Name: Killer</p>
     			<p>Age: 2 years</p>
-    			<p>Romantic and smart. I enjoy Mozart and Debussy. Love long walks and candle light dinners.</p>
+    			<p>Romantic and smart. I enjoy Mozart and Debussy. I Love long walks and candle light dinners.</p>
     		</div><!-- ends profile -->
     	</div><!-- ends bachelor  -->	
     </section>
-    <section class="eligibleBachelorette" id="bachelorette">
+    <section class="eligibleBachelorette data-stellar-background-ratio='0.5'" id="bachelorette">
     	<a href=""><img class="right" src="img/right.png"></a>
     	<a href=""><img class="left" src="img/left.png"></a>
     	<h2>Eligible Bachelorettes <a href="#home"><img class="dogHouse" src="img/doghouse.png"></a></h2>
@@ -145,11 +145,11 @@
     			  onmouseout="this.src='img/pic8.png'">
     			<p>Name: Nucita</p>
     			<p>Age: 10 months</p>
-    			<p>Fancy and sophisticated. Potty trained ans well behaved. Enjoy shopping the lastest fashion trends.A true princess!!</p>
+    			<p>Fancy and sophisticated. Potty trained and well behaved. I enjoy shopping the lastest fashion trends.A true princess!!</p>
     		</div><!-- ends profile -->
     	</div><!-- ends bachelorette	 -->
     </section>
-    <section class="loveStory" id="loveStory">
+    <section class="loveStory data-stellar-background-ratio='0.5'" id="loveStory">
     	<h2>Succesful love stories <a href="#home"><img class="dogHouse" src="img/doghouse.png"></a></h2>
     	<div class="lsWrapper">
     		<p>~ Peter & Mango ~</p>
@@ -165,7 +165,7 @@
 	      </div> <!-- ends wedding2  -->
       </div> <!-- ends lsWrapper -->
     </section>
-    <section class="events" id="upComing">
+    <section class="events data-stellar-background-ratio='0.5'" id="upComing">
     	<h2>Upcoming events<a href="#home"><img class="dogHouse" src="img/doghouse.png"></a></h2>
     	<div class="eWrapper">
     		<a href=""><img class="right" src="img/right.png"></a>
@@ -174,14 +174,21 @@
     	</div><!-- ends eWrapper	 -->
     </section>
     <script src="http://code.jquery.com/jquery-1.12.0.js"></script>
-    <script src="js/jquery.nav.js"></script>  
+    <script src="js/jquery.nav.js"></script> 
     <script> 
 
     // ONE PAGE NAVIGATION
-	    $('#home').onePageNav();
+	   $('#home').onePageNav();  
 
 	  // REGISTRATION LIGHTBOX
-	
+	  
+      $('#logIn').click( function() {
+        $('.lightbox').css('display' , 'block');
+      });
+
+      $('.x').click( function() {
+        $('.lightbox').css('display' , 'none')
+      });
 
     // NAVIGATION BAR 
 
@@ -204,7 +211,7 @@
       $(window).resize(windowResize);
 
 
-	   
+   
 
     </script>
   </body>	
